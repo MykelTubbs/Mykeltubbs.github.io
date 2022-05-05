@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto+Slab&display=swap');
+body{
+font-family: "Merriweather","Roboto Slab" "Arial", sans-serif;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "header  header"
+  "nav     nav"
+  "main    main";
+grid-gap: 18px;
+background-color: rgb(228,209,185);
+
+
+}
+header{
+  grid-area:header;
+  background-color: rgb(228,209,185);
+
+}
+#thewidereceiverbible{
+  color:rgb(218, 165, 32);
+  background-color: rgb(53, 57, 53);
+  align-items: center;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+ul{
+
+}
+.menu li{
+  display:inline-flex;
+
+
+  padding-right: 120px;
+
+
+}
+.menu{
+  padding-left: 160px;
+}
+
+nav{
+
+    padding-left: 0;
+
+
+
+  grid-area: nav;
+  position:sticky;
+  top:0;
+
+
+ background-color: rgb(53, 57, 53);
+  font-size: 15px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 0;
+
+
+
+}
+#navigation{
+  margin: 0;
+  list-style-type:none;
+  padding-left: 0;
+
+  display:flex;
+
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+
+
+}
+
+main{
+  grid-area: main;
+  display:grid;
+  grid-template-columns: 1fr 1.3fr ;
+  grid-template-areas:
+  "widereceiverbible    mykelcatchac"
+  "intro    mykelcatchac2"
+  "history players"
+  ".  list"
+  "mindset  number11catch"
+  "fundamentals  number12catch"
+  ". recap"
+  "nextsteps number9td"
+  "conclusion  .";
+
+margin-left: 100px;
+line-height: 1.5;
+
+}
+
+h2{
+  font-size: 25px;
+  color: rgb(218, 165, 32);
+    border-bottom: 1px solid #222;
+}
+#caption
+a,
+a:link{
+  color:rgb(255, 255, 255);
+}
+a:visited{
+  color: rgb(255, 255, 255);
+}
+a:hover{
+  color:fff;
+  background-color: rgb(0, 0, 0);
+}
+a:active{
+  background-color: rgb(232, 32, 66);
+}
+
+
+#widereceiverbible {
+  grid-area: widereceiverbible;
+max-width: 500px;
+min-height: 250px;
+  margin-right: 50px;
+  height:100px;
+  line-height: 2;
+}
+#intro {
+  grid-area: intro;
+max-width: 500px;
+  margin-right: 50px;
+  height:200px;
+  line-height: 2;
+}
+#history {
+  grid-area: history;
+max-width: 500px;
+min-height: 100px;
+  margin-right: 50px;
+  height:100px;
+  line-height: 2;
+
+
+}
+#players{
+  grid-area: players ;
+  margin-top: 50px;
+  max-width: 500px;
+
+  margin-right: 50px;
+min-height:100px;
+    line-height: 2;
+}
+#list{
+  grid-area: list ;
+  width:550px;
+  height:300px;
+  overflow: auto;
+  line-height: 2;
+
+
+}
+
+#fundamentals{
+  grid-area: fundamentals;
+  max-width: 500px;
+  margin-right: 100px;
+line-height: 2;
+
+
+}
+#recap{
+  grid-area: recap;
+  max-width: 500px;
+  margin-right: 100px;
+  line-height: 2;
+
+}
+#mindset{
+  grid-area: mindset;
+  max-width: 500px;
+  margin-right: 100px;
+  line-height: 2;
+
+}
+#mykelcatchac{
+  grid-area: mykelcatchac;
+  width: 550px;
+  height: 350px;
+  overflow:auto;
+
+}
+#mykelcatchac2{
+  grid-area: mykelcatchac2;
+  width: 550px;
+  height: 350px;
+  overflow:auto;
+
+}
+#number9td{
+  grid-area: number9td;
+  width: 550px;
+  height: 500px;
+  overflow:auto;
+
+}
+#number11catch{
+  grid-area: number11catch;
+  width: 550px;
+  height: 500px;
+  overflow:auto;
+
+}
+#number12catch{
+  grid-area: number12catch;
+  width: 550px;
+  height: 600px;
+  overflow:auto;
+
+}
+
+#nextsteps{
+  grid-area: nextsteps;
+  max-width: 500px;
+  margin-right: 100px;
+  line-height: 2;
+}
+#conclusion{
+  grid-area: conclusion;
+  max-width: 500px;
+
+  margin-right: 100px;
+  line-height: 2;
+}
+
+/*#naturalresources{
+  height:100px;
+  line-height: 1.5;
+
+}
+
+#resources{
+  margin-bottom: 400px;
+  list-style-type: none;
+  padding-left: 0;
+  min-height: 48px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+
+
+
+#government{
+grid-area: government;
+line-height: 2;
+margin-right: 50px;
+
+}
+#gov{
+  grid-area: gov;
+  line-height: 3;
+  font-size: 15px;
+
+}
+
+#positions{
+  grid-area: positions;
+  margin-right: 50px;
+
+}
+
+#hotel{
+  grid-area: hotel;
+  width: 550px;
+  overflow:auto;
+}
+
+#peopleandculture{
+  grid-area : peopleandculture;
+  margin-right: 50px;
+}
+#caption
+a,
+a:link{
+  color:rgb(255, 255, 255);
+  padding: 4px;
+}
+a:visited{
+  color: rgb(255, 255, 255);
+}
+a:hover{
+  color:fff;
+  background-color: rgb(0, 0, 0);
+}
+a:active{
+  background-color: rgb(232, 32, 66);
+}
+
+@media(max-width:414px){
+  body{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main";
+  }
+}
